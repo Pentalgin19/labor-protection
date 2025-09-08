@@ -1,0 +1,36 @@
+<Page x:Class="LaborProtection.Pages.ReportsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Отчёты" Background="#FFF8F1E7">
+    <Grid Margin="20">
+        <StackPanel>
+            <TextBlock Text="Сотрудники по отделу" FontWeight="Bold"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="ID отдела:" VerticalAlignment="Center"/>
+                <ComboBox x:Name="DeptIdSqlBox" Width="150" Margin="5"/>
+                <Button Content="Показать" Click="ShowEmployeesByDeptSql_Click"/>
+            </StackPanel>
+            <ListBox x:Name="SqlEmployeesList" Height="80"/>
+
+            <TextBlock Text="Количество сотрудников по отделам" FontWeight="Bold" Margin="10 10 0 0"/>
+            <Button Content="Показать" Width="150" HorizontalAlignment="Left" Click="ShowEmpCountByDeptSql_Click"/>
+            <ListBox x:Name="SqlEmpCountList" Height="80"/>
+
+            <TextBlock Text="Сотрудники, принятые после даты" FontWeight="Bold" Margin="10 10 0 0"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Дата (ГГГГ-ММ-ДД):" VerticalAlignment="Center"/>
+                <TextBox x:Name="HireDateBox" Width="100" Margin="5"/>
+                <Button Content="Показать" Click="ShowEmployeesHiredAfter_Click"/>
+            </StackPanel>
+            <ListBox x:Name="LinqEmployeesList" Height="80"/>
+
+            <TextBlock Text="Экзамены сотрудника" FontWeight="Bold" Margin="10 10 0 0"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="ID сотрудника:" VerticalAlignment="Center"/>
+                <ComboBox x:Name="EmpIdBox" Width="150" Margin="5"/>
+                <Button Content="Показать" Click="ShowExamsByEmployee_Click"/>
+            </StackPanel>
+            <ListBox x:Name="LinqExamsList" Height="80"/>
+        </StackPanel>
+    </Grid>
+</Page> 

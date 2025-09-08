@@ -1,0 +1,25 @@
+<Page x:Class="LaborProtection.Pages.BackupRestorePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Резервное копирование и восстановление" Background="#FFF8F1E7">
+    <Grid Margin="20">
+        <StackPanel>
+            <TextBlock Text="Резервное копирование и восстановление БД" FontWeight="Bold" FontSize="18" Margin="0 0 0 20"/>
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 10">
+                <TextBlock Text="Путь для копии:" VerticalAlignment="Center"/>
+                <TextBox x:Name="BackupPathBox" Width="300" Margin="5"/>
+                <Button Content="Обзор..." Click="BrowseBackupPath_Click"/>
+            </StackPanel>
+            <Button Content="Сделать резервную копию" Click="BackupButton_Click" Width="220" Margin="0 0 0 10"/>
+            <TextBlock x:Name="BackupStatusText" Foreground="Green"/>
+            <Separator Margin="0 10 0 10"/>
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 10">
+                <TextBlock Text="Файл для восстановления:" VerticalAlignment="Center"/>
+                <TextBox x:Name="RestorePathBox" Width="300" Margin="5"/>
+                <Button Content="Обзор..." Click="BrowseRestorePath_Click"/>
+            </StackPanel>
+            <Button Content="Восстановить из копии" Click="RestoreButton_Click" Width="220"/>
+            <TextBlock x:Name="RestoreStatusText" Foreground="Green"/>
+        </StackPanel>
+    </Grid>
+</Page> 

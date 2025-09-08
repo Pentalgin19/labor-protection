@@ -1,0 +1,20 @@
+<Page x:Class="LaborProtection.Pages.SqlToolsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="SQL Tools" Background="#FFF8F1E7">
+    <Grid Margin="20">
+        <StackPanel>
+            <TextBlock Text="Процедуры" FontWeight="Bold" FontSize="18"/>
+            <StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+                <TextBlock Text="ID экзамена:" VerticalAlignment="Center"/>
+                <TextBox x:Name="ExamIdBox" Width="50" Margin="5"/>
+                <TextBlock Text="Результат:" VerticalAlignment="Center"/>
+                <TextBox x:Name="ResultValueBox" Width="50" Margin="5"/>
+                <Button Content="Добавить результат" Click="AddExamResultProc_Click"/>
+            </StackPanel>
+            <TextBlock x:Name="AddExamResultProcText" Foreground="Green"/>
+            <Button Content="Показать сотрудников без проверок" Click="ShowEmployeesWithoutExamsProc_Click" Margin="0 10 0 0"/>
+            <ListBox x:Name="NoExamEmployeesProcList" Height="80"/>
+        </StackPanel>
+    </Grid>
+</Page> 
