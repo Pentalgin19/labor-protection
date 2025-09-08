@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LaborProtection
-build_property.ProjectDir = C:\Users\Karina\source\repos\LaborProtection\LaborProtection\
+build_property.ProjectDir = C:\Users\Karina\source\repos\labor-protection\LaborProtection\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

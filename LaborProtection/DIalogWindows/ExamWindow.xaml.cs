@@ -40,13 +40,23 @@ namespace LaborProtection
             if (exam != null)
             {
                 TitleTextBox.Text = exam.title;
+                string res_mark = "";
                 // ReasonComboBox и MarkComboBox — если нужно, можно выбрать по id или тексту
                 ExamDatePicker.SelectedDate = exam.date.ToDateTime(TimeOnly.MinValue);
                 EmpComboBox.SelectedItem = emps.FirstOrDefault(e => e.Contains(exam.id_emp.ToString()));
                 PrevDatePicker.SelectedDate = exam.date_prev.ToDateTime(TimeOnly.MinValue);
-                MarkComboBox.SelectedItem = marks.FirstOrDefault(m => m == exam.result_mark.ToString());
+                switch (exam.result_mark)
+                {
+                    case 2: res_mark = "неудовлетворительно"; break;
+                    case 3: res_mark = "удовлетворительно"; break;
+                    case 4: res_mark = "хорошо"; break;
+                    case 5: res_mark = "отлично"; break;
+                }
+                MarkComboBox.SelectedItem = marks.FirstOrDefault(m => m == res_mark);
                 NextDatePicker.SelectedDate = exam.date_next.ToDateTime(TimeOnly.MinValue);
-                NumberTextBox.Text = exam.number;
+                MessageBox.Show(exam.reason.ToString());
+                var dict = context.dictionary.Where(d => (d.id == exam.reason)).FirstOrDefault();
+                ReasonComboBox.SelectedItem = reasons.FirstOrDefault(r => r == dict.short_text);
             }
         }
 
@@ -60,7 +70,7 @@ namespace LaborProtection
                 foreach (var emp in context.employees.ToList())
                 {
                     indEmp = (int)emp.id;
-                    emps.Add($"{emp.surname} {emp.name} {emp.patronymic}");
+                    emps.Add($"{indEmp} {emp.surname} {emp.name} {emp.patronymic}");
                 }
                 EmpComboBox.ItemsSource = emps;
 
@@ -114,7 +124,6 @@ namespace LaborProtection
                         date_prev = date_prev,
                         result_mark = result_mark,
                         date_next = date_next,
-                        number = number
                     };
                     DialogResult = true;
                     this.Close();

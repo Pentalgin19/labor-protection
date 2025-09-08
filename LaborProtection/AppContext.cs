@@ -15,11 +15,9 @@ namespace LaborProtection
     internal class AppContext : DbContext
     {
         public DbSet<Employee> employees { get; set; }
-        public DbSet<Change> changes { get; set; }
         public DbSet<Exam> exams{ get; set; }
         public DbSet<User> users{ get; set; }
-        public DbSet<Results> results { get; set; }
-        public DbSet<Comission> comission{ get; set; }
+        public DbSet<Change> changes { get; set; }
         public DbSet<Dictionary> dictionary { get; set; }
 
         public AppContext()

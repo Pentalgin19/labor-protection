@@ -10,13 +10,13 @@ namespace LaborProtection.Entities
     {
         private int _id;
         private int _id_user;
-        private int _description;
+        private string _description;
 
         public int id { get; set; }
         public int id_user { get; set; }
-        public int description  { get; set; }
+        public string description  { get; set; }
 
-        public Change(int Id, int Id_user, int Description)
+        public Change(int Id, int Id_user, string Description)
         {
             id = Id;
             id_user = Id_user;

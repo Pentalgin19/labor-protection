@@ -16,9 +16,8 @@ namespace LaborProtection.Entities
         public DateOnly date_prev { get; set; }
         public int result_mark { get; set; }
         public DateOnly date_next { get; set; }
-        public string number { get; set; }
 
-        public Exam(int Id, string Title, int Reason, DateOnly Date, int Id_emp, DateOnly Date_prev, int Result_mark, DateOnly Date_next, string Number)
+        public Exam(int Id, string Title, int Reason, DateOnly Date, int Id_emp, DateOnly Date_prev, int Result_mark, DateOnly Date_next)
         {
             id = Id;
             title = Title;
@@ -26,7 +25,6 @@ namespace LaborProtection.Entities
             date = Date;
             date_prev = Date_prev;
             date_next = Date_next;
-            number = Number;
             result_mark = Result_mark;
             id_emp = Id_emp;
         }

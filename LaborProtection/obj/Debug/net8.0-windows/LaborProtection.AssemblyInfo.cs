@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LaborProtection")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+daedaa3c25dcd459672654b68500f572c6abc185")]
 [assembly: System.Reflection.AssemblyProductAttribute("LaborProtection")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LaborProtection")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

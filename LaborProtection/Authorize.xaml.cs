@@ -48,7 +48,8 @@ namespace LaborProtection
 
                 if (user != null)
                 {
-                    Name = $"{user.name} {user.surname}";
+                    var emp = context.employees.Where(d => (d.id == user.id_emp)).FirstOrDefault();
+                    Name = $"{emp.name} {emp.surname}";
                     Role = user.role.ToString();
                     MainWindow main = new MainWindow();
                     main.Show();

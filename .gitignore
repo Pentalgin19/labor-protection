@@ -1,0 +1,19 @@
+# Файлы сборки и запуска
+bin/
+obj/
+
+# Файлы пользовательских настроек IDE
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Файлы пакетов NuGet
+packages/
+
+# Файлы резервных копий и временные файлы
+*.swp
+*.swo
+*~

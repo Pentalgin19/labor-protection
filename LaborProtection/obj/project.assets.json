@@ -1453,11 +1453,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Karina\\source\\repos\\LaborProtection\\LaborProtection\\LaborProtection.csproj",
+      "projectUniqueName": "C:\\Users\\Karina\\Source\\Repos\\labor-protection\\LaborProtection\\LaborProtection.csproj",
       "projectName": "LaborProtection",
-      "projectPath": "C:\\Users\\Karina\\source\\repos\\LaborProtection\\LaborProtection\\LaborProtection.csproj",
+      "projectPath": "C:\\Users\\Karina\\Source\\Repos\\labor-protection\\LaborProtection\\LaborProtection.csproj",
       "packagesPath": "C:\\Users\\Karina\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Karina\\source\\repos\\LaborProtection\\LaborProtection\\obj\\",
+      "outputPath": "C:\\Users\\Karina\\Source\\Repos\\labor-protection\\LaborProtection\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Karina\\AppData\\Roaming\\NuGet\\NuGet.Config",

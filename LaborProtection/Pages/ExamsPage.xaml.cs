@@ -115,7 +115,6 @@ namespace LaborProtection.Pages
                             examToUpdate.date_prev = updatedExam.date_prev;
                             examToUpdate.result_mark = updatedExam.result_mark;
                             examToUpdate.date_next = updatedExam.date_next;
-                            examToUpdate.number = updatedExam.number;
                             context.SaveChanges();
                         }
                     }
@@ -214,7 +213,6 @@ namespace LaborProtection.Pages
                                 date_prev = date_prev ?? default,
                                 result_mark = result_mark ?? 0,
                                 date_next = date_next ?? default,
-                                number = number
                             };
                             examsToAdd.Add(exam);
                         }
@@ -286,7 +284,6 @@ namespace LaborProtection.Pages
                         row.CreateCell(4).SetCellValue(ex.date_prev.ToString());
                         row.CreateCell(5).SetCellValue(ex.result_mark);
                         row.CreateCell(6).SetCellValue(ex.date_next.ToString());
-                        row.CreateCell(7).SetCellValue(ex.number);
                     }
                     using (FileStream fs = new FileStream(filePath, FileMode.Create, FileAccess.Write))
                     {

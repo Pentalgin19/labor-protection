@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "e8b/uU5hwSNPNQi9YbYTtxKG/LGVBuic3XxoUrZ/ZY52djIpyv09/jeYjMUO0i/zVFjIr3jKz3MvnFgtjO3nmQ==",
+  "dgSpecHash": "sk6GgO+1B1TwsYVlumN0Dr7uUHQOG2AOdcrfGG4pI6Dm9Py7mjWZ5qnrF8LMaIx0gb2xEzwXgubiQVCSU9bBGA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Karina\\source\\repos\\LaborProtection\\LaborProtection\\LaborProtection.csproj",
+  "projectFilePath": "C:\\Users\\Karina\\source\\repos\\labor-protection\\LaborProtection\\LaborProtection.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Karina\\.nuget\\packages\\bouncycastle.cryptography\\2.4.0\\bouncycastle.cryptography.2.4.0.nupkg.sha512",
     "C:\\Users\\Karina\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512",
